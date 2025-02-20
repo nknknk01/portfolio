@@ -1,40 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>自己紹介1</title>
     <meta name="description" content="自己紹介サイトを作ろう">
     <link rel="stylesheet" href="profile1.css">
+    <script defer src="../script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
         <header>
-            <h1>Profile</h1>
-            <nav class="gnav">
-                <ul class="gnav flex">
-                    <li class="gnav__item">Profile</li>
-                    <li class="gnav__item"><a href="profile2.html" class="gnav__link">Like</a></li>
-                    <li class="gnav__item"><a href="profile3.html" class="gnav__link">Recommend</a></li>
-                </ul>
+            <nav>
+                <div class="logo"><a href="../index.html">My Portfolio</a></div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </nav>
+            
         </header>
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="../index.html">Top</a></li>
+                <li><a href="../about/profile1.html">About</a></li>
+                <li><a href="../skills/skills.html">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
         <main>
+            <h1>Profile</h1>
             <img src="img/profile1.svg" alt="プロフィール画像">
-            <h2>加藤　信之</h2>
+            <h2>加藤 信之</h2>
             <ul class="main">
-                <li class="main__list">出身　　　　　　　：広島（生まれも育ちも広島で広島から出たことありません）</li>
-                <li class="main__list">趣味　　　　　　　：旅行・銭湯めぐり（オススメあったら教えてください）</li>
-                <li class="main__list">好きなもの　　　　：ラーメン（最低週一でどこかのラーメン食べに行きます）</li>
-                <li class="main__list">好きなこと　　　　：お笑い番組（お笑いライブとか見に行ったりもします）</li>
-                <li class="main__list">休日の過ごし方　　：ジム（スタジオで汗を流したり、たまに筋トレしたりしてます）</li>
-                <li class="main__list">ニックネーム　　　：カトちゃん（学生時代はよくそう呼ばれていました）</li>
+                <li class="main__list">出身：広島（生まれも育ちも広島で広島から出たことありません）</li>
+                <li class="main__list">趣味：旅行・銭湯めぐり（オススメあったら教えてください）</li>
+                <li class="main__list">好きなもの：ラーメン（最低週一でどこかのラーメン食べに行きます）</li>
+                <li class="main__list">好きなこと：お笑い番組（お笑いライブとか見に行ったりもします）</li>
+                <li class="main__list">休日の過ごし方：ジム（スタジオで汗を流したり、たまに筋トレしたりしてます）</li>
                 
             </ul>
 
         </main>
         <footer>
-            <small><a href="profile2.html">次へ→</a></small>
+            <small><p>&copy; 2025 NOBUYUKI KATO</p></small>
         </footer>
 
 

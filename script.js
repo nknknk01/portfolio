@@ -33,3 +33,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener("scroll", function () {
+    const elements = document.querySelectorAll(".fade-in");
+    elements.forEach(element => {
+        if (element.getBoundingClientRect().top < window.innerHeight * 0.8) {
+            element.classList.add("show");
+        }
+    });
+});
+
