@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 589.85 70.23">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #6d6d6d;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        font-family: YuMincho-Regular, 'Yu Mincho';
+        font-size: 21px;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #6d6d6d;
+      }
+
+      .cls-3 {
+        font-family: Elephant-Regular, Elephant;
+        font-size: 60px;
+      }
+    </style>
+  </defs>
+  <g id="_レイヤー_1" data-name="レイヤー_1">
+    <line class="cls-1" y1="66.85" x2="428.94" y2="66.85"/>
+  </g>
+  <g id="_レイヤー_5" data-name="レイヤー_5">
+    <text class="cls-2" transform="translate(296.74 51.87)"><tspan x="0" y="0">よくある質問</tspan></text>
+    <text class="cls-3" transform="translate(126.96 51.87)"><tspan x="0" y="0">FAQ</tspan></text>
+  </g>
+</svg>

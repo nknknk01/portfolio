@@ -1,0 +1,267 @@
+@charset "utf-8";
+
+/* ============================================================
+header
+============================================================= */
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 99;
+  background: linear-gradient(#cc99ff, rgba(255, 255, 255, 0));
+  padding: 10px;
+}
+
+.topsvg {
+  width: 100px;
+  margin: 0 20px;
+  vertical-align: bottom;
+}
+
+h1 {
+  padding: 0;
+  margin-right: auto;
+}
+
+h1 img {
+  margin: 0;
+  vertical-align: middle;
+}
+
+.top {
+  max-width: 1020px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.y_butan {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: auto 0;
+}
+
+/* nav */
+.menu-toggle,
+.menu-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 11;
+  transition: opacity .3s;
+}
+
+.menu-toggle:hover,
+.menu-close:hover {
+  opacity: 0.5;
+}
+
+nav {
+  display: none;
+  /* 初期はメニュー非表示 */
+  flex-direction: column;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f9e8f0;
+  opacity: 0.9;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 10;
+  font-size: 2rem;
+}
+
+nav.active {
+  display: flex;
+  /* メニューが表示される時 */
+}
+
+.gnav {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  list-style: none;
+  padding: 0;
+}
+
+.gnav li {
+  margin: auto;
+}
+
+.js-details summary {
+  cursor: pointer;
+}
+
+.l-drawer_group_name-flex {
+  display: none;
+}
+
+.js-details[open] .l-drawer_group_name-flex {
+  display: flex;
+  /* ドロップダウン表示時 */
+  justify-content: center;
+  gap: 3rem;
+  font-size: calc(24/16*1rem);
+  text-align: left;
+}
+
+.js-details[open] .l-drawer_group_name-flex li {
+  margin-top: 1rem;
+}
+
+/* メニュー表示時にスクロールを無効化 */
+body.menu-active {
+  overflow: hidden;
+  /* スクロール無効 */
+}
+
+.menu-toggle img,
+.menu-close img {
+  width: 40px;
+  /* 適切な幅に調整 */
+  height: auto;
+  /* 自動調整 */
+}
+
+@media (min-width: 769px) {
+  .js-details[open] .l-drawer_group_name-flex {
+    gap: 5rem;
+  }
+}
+
+/* ============================================================
+  footer
+  ============================================================= */
+footer {
+  background: linear-gradient(360deg, #cc99ff, rgba(255, 255, 255, 0));
+  margin-top: 100px;
+  text-align: center;
+  color: #515b72;
+}
+
+.footer__container {
+  max-width: 1020px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__box {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.footer__box-title {
+  border-bottom: 1px solid #ffffff;
+  font-size: calc(32/16*1rem);
+}
+
+.footer__box a {
+  color: #515b72;
+}
+
+
+
+.footer__box ul {
+  padding: 5%;
+  color: #515b72;
+  text-shadow:
+    2px 2px 0#dbd0e6,
+    -1px -1px 0#dbd0e6,
+    1px -1px 0#dbd0e6,
+    -1px 1px 0#dbd0e6,
+    1px 1px 0#dbd0e6;
+}
+
+.footer__box li {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.footer__button span {
+  margin: 0;
+  display: block;
+}
+
+.footer__button {
+  color: #515b72;
+  line-height: 1.5;
+  /* テキストが中央に来るように調整 */
+  padding: 1rem;
+  font-size: calc(18/16*1rem);
+  border: 3px solid #515b72;
+  white-space: nowrap;
+  /* テキストの折り返しを防ぐ */
+  display: inline-block;
+  /* ボタンをインラインブロック要素にする */
+}
+
+.footer__button:hover {
+  color: #ff647e;
+  border: 3px solid #ff647e;
+}
+
+.text_center {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.footer_text_right a {
+  margin-left: 80%;
+  border-bottom: 1px solid #515b72;
+  font-size: calc(18/16*1rem);
+
+}
+
+.larger__font {
+  font-size: calc(24/16*1rem);
+}
+
+li.footermap {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.indent {
+  text-indent: 4rem;
+}
+
+@media (min-width: 769px) {
+  .footer__container {
+    max-width: 1020px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer__box {
+    width: 33%;
+    margin: 0 auto;
+  }
+
+  .footer__box+.footer__box {
+    border-left: 1px solid #fff;
+
+  }
+
+  .indent {
+    text-indent: 5rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  li.footermap {
+    font-size: 18px;
+  }
+
+  .footer__box-title {
+    font-size: calc(36/16*1rem);
+  }
+}

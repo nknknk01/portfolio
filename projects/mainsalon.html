@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- テストでサーバーに上げた時検索に引っかからないように -->
+  <meta name="robots" content="noindex,nofollow" />
+  <title>ムーンライトビューティー</title>
+  <meta name="description" content="広島市安佐南区で美を追求するならムーンライトビューティへ。フェイシャル・全身リンパ・痩身・小顔・角質ピーリングでトータルケア！医療採用の光脱毛機も完備し、理想の美肌へ導きます。
+  ">
+  <meta name="keywords" content="フェイシャル,脱毛,ボディケア,痩身,広島,広島市,安佐南区,下祗園駅,古市橋駅,祇園,山本,大町,緑井,八木,中筋,医療提携サロン,アットホームなカジュアルサロン,エステサロン,駐車場あり,安心料金">
+  <!-- 通常のファビコン（デスクトップブラウザ用、16x16 または 32x32 ピクセル）-->
+  <link rel="icon" type="image/png" href="images/index/favicon.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="images/index/favicon.png" sizes="16x16">
+
+  <!-- ICOファイル（古いブラウザ用）-->
+  <link rel="icon" type="image/x-icon" href="images/index/favicon.ico">
+
+  <!-- Apple Touchアイコン（iOSデバイス用）-->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/index/favicon.png">
+
+  <!-- Android用アイコン（Manifest経由）-->
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- 高解像度のデバイス向け -->
+  <link rel="icon" type="image/png" href="images/index/favicon.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="images/index/favicon.png" sizes="96x96">
+
+  <!-- 高解像度デバイス用アイコン -->
+  <link rel="icon" type="image/png" href="images/index/favicon-192x192.png" sizes="192x192">
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="kyoutuu.css">
+
+  <!-- ｊｓ -->
+  <script src="mainsalon.js" defer></script>
+</head>
+
+<body id="top">
+  <header>
+    <div class="top">
+      <h1><a href="#"><img src="images/index/logo.png" alt="MOON LIGHT BEAUTY. ムーンライトビューティー 看護師による至高のリラクゼーション時間"></a></h1>
+      <div class="y_butan">
+        <a href="#y" id="y_butan"><img class="topsvg" src="images/index/reservation-bottun.svg" alt="ご予約はこちら"></a>
+      </div>
+      <button class="menu-toggle">
+        <img src="images/index/humber-icon-open.svg" alt="メニューを開く" class="js-menu-icon">
+      </button>
+      <!-- メニューを閉じるボタンを追加 -->
+      <button class="menu-close" style="display:none;">
+        <img src="images/index/humber-icon-close.svg" alt="メニューを閉じる">
+      </button>
+    </div>
+  </header>
+
+  <nav>
+    <ul class="gnav">
+      <li><a href="../index.html">トップ</a></li>
+      <li><a href="mens.html">メンズメニュー</a></li>
+      <li><a href="projects.html">プロジェクト一覧へ戻る</a></li>
+    </ul>
+  </nav>
+
+
+  <div class="hero">
+    <div class="hero__container wrapper"><img src="images/index/LadiesTOP.png" alt="TOP画像"></div>
+  </div>
+  <div class="slide">
+    <div class="slide-inner slide-anime">
+      <img src="images/index/cr1.png" alt="スライド1">
+      <img src="images/index/cr2.png" alt="スライド2">
+      <img src="images/index/cr3.png" alt="スライド3">
+      <img src="images/index/cr4.png" alt="スライド4">
+      <img src="images/index/cr5.png" alt="スライド5">
+      <img src="images/index/cr6.png" alt="スライド6">
+    </div>
+    <div class="slide-inner slide-anime">
+      <img src="images/index/cr1.png" alt="スライド1">
+      <img src="images/index/cr2.png" alt="スライド2">
+      <img src="images/index/cr3.png" alt="スライド3">
+      <img src="images/index/cr4.png" alt="スライド4">
+      <img src="images/index/cr5.png" alt="スライド5">
+      <img src="images/index/cr6.png" alt="スライド6">
+    </div>
+  </div>
+
+  <main class="wrapper">
+    <section class="about">
+      <h2 class="wrapper sec__title"><img src="images/index/about-the-salon.svg" alt="about-the-salon"></h2>
+
+      <div class="about__inner">
+        <img src="images/index/owner.png" alt="">
+        <div class="about__content">
+          <p>MOON LIGHT BEAUTY</p>
+          <p>店長 ## ###</p>
+        </div>
+      </div>
+
+      <div class="about__text">
+        <h3>ムーンライトビューティが<br>
+          目指したのは地域に愛されるお店。</h3>
+        <div class="card__list">
+          <div class="card">
+            <img src="images/index/doctor-salon.svg" alt="看護師が対応している医療提携サロン">
+          </div>
+          <div id="plus"><img src="images/index/plus.svg" alt="プラスマーク"></div>
+          <div class="card">
+            <img src="images/index/casual-salon.svg" alt="幅広い年齢層で誰でも通いやすいアットホームなカジュアルサロン">
+          </div>
+        </div>
+        <p id="font__change">心のリラックスから脱毛＆肌質改善や美白など、 <br>
+          専門知識を元に行う一人ひとりに寄り添う施術で<br>
+          お客様の様々なお悩みを解決サポート致します。</p>
+      </div>
+    </section>
+
+
+    <section class="flow">
+      <h2 class="wrapper sec__title"><img src="images/index/Treatment-flow.svg" alt="Treatment-flow"></h2>
+      <div class="card__item">
+        <!-- <img src="images/index/yoyaku.png" alt="1.ご予約"> -->
+        <!-- <img src="images/index/arrow.png" class="arrow">
+        <img src="images/index/kaunsering.png" alt="カウンセリング">
+        <img src="images/index/arrow.png" class="arrow">
+        <img src="images/index/sezyutu.png" alt="施術"> -->
+        <ol>
+          <li class="yoyaku">
+            <h3 class="flowcard__title">1.予約</h3><img src="images/index/test1.jpg" alt="1.予約" id="yoyaku">
+            <p>お電話、インターネットにて予約していただきます。<span class="pc-only-br"><br></span>ご希望の日時を指定いただき、ご来店ください。</p>
+          </li>
+          <li><img src="images/index/arrow.png" class="arrow" alt=""></li>
+          <li class="yoyaku">
+            <h3 class="flowcard__title">2.カウンセリング</h3><img src="images/index/test2.jpg" alt="2.カウンセリング" id="counseling">
+            <p>無料カウンセリングにて、お悩みや目的・体質に応じて最適なプランをご提案させていただきます。</p>
+          </li>
+          <li><img src="images/index/arrow.png" class="arrow" alt=""></li>
+          <li class="yoyaku">
+            <h3 class="flowcard__title">3.施術</h3><img src="images/index/test3.jpg" alt="3.施術" id="treatment">
+            <p>カウンセリングをもとにお客様に最適なプランをご提案し、完全個室にて心を込めて施術いたします。</p>
+          </li>
+        </ol>
+      </div>
+
+
+    </section>
+    <section class="menu">
+      <h2 class="wrapper sec__title"><img src="images/index/Menu.svg" alt="MENU"></h2>
+      <div class="menu__card" id="menu__card">
+        <div class="menu__imgbox"><img src="images/index/menu1.png" alt="フェイシャル画像">
+        </div>
+
+
+        <div class="menu__textbox">
+          <div class="title__flex">
+            <h3 class="h3__title">Facial</h3>
+            <p class="small__title">フェイシャル</p>
+          </div>
+          <p>
+            年齢肌でお悩みの方にオススメの<br>
+            エイジングケアコースあり。<br>
+            お顔のむくみ解消、若々しい見た目へ
+          </p>
+
+          <p>
+            クレンジング→洗顔→<br>（毛穴吸引、ダイヤモンドピーリング、<br>ポレーション、ラジオ波）→<br>
+            各種マッサージ→（リフティング）→<br>
+            基本モイスチャーアルゲパック付<br><span>（又は各種パック）→整肌</span>
+          </p>
+          <div class="btn">
+            <p class="text_right"><a href="facial-body.html#facial" class="See__more">See more →</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="menu__card">
+        <div class="menu__imgbox img__change"><img src="images/index/menu2.png" alt="美肌フォトフェイシャル画像"></div>
+
+        <div class="menu__textbox">
+
+          <div class="title__noflex">
+            <h3 class="h3__title" id="beautiful__skin">Beautiful Skin Photofacial</h3>
+            <p id="photofacial" class="small__title">美肌フォトフェイシャル</p>
+          </div>
+
+          <p>
+            特殊な光（IPL）を<br>
+            お顔に照射することで、<br>
+            コラーゲン繊維やヒアルロン酸を<br>
+            作り出す線維芽細胞、毛細血管を<br>
+            活性化、肌細胞の新陳代謝を上げ、<br>
+            強い肌質へと導く。
+          </p>
+
+          <p>
+            ※2か月は2週間に1回を推奨。<br>
+            3か月以降は3～4週間に1回<br>
+            クレンジング→洗顔→<br>
+            (各種マッサージ)→<br>
+            フォトフェイシャル→<br>
+            鎮静→（各種ポレーション）→<br>
+            アルゲパック→整肌
+          </p>
+          <div class="btn">
+            <p class="text_right"><a href="facial-body.html#beautifulskinphotofacial" class="See__more">See more →</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="menu__card">
+        <div class="menu__imgbox"><img src="images/index/menu3.png" alt="ボディ画像"></div>
+
+        <div class="menu__textbox">
+          <div class="title__flex">
+            <h3 class="h3__title">Body</h3>
+            <p class="small__title">ボディ</p>
+          </div>
+          <p>
+            全身のコリ・むくみ・疲れを解消。<br>
+            溜まった老廃物を取り除き、リンパの<br>
+            流れを良くしてコリをほぐす。<br>
+            疲れた身体を整えたい方にお勧め。
+          </p>
+
+          <p>
+            全身リンパマッサージ<br>
+            ヘッドマッサージ<br>
+            ボディサウナ<br>
+            ボディコース<br>
+            （キャビーテーション、ラジオ波、<br>
+            お疲れ改善コース、痩身）
+          </p>
+          <div class="btn">
+            <p class="text_right"><a href="facial-body.html#body" class="See__more">See more →</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="menu__card">
+        <div class="menu__imgbox img__change"><img src="images/index/menu4.png" alt="脱毛画像"></div>
+
+        <div class="menu__textbox">
+          <div class="title__flex">
+            <h3 class="h3__title">Hair Removal</h3>
+            <p class="small__title">脱毛</p>
+          </div>
+          <p>
+            医療現場でも採用されている<br>
+            光脱毛最高機器を導入。
+          </p>
+
+          <p>
+            お得セット<br>
+            コース（8回/１年）両腕・両足・<br>
+            ワキ・ひじ上下・膝上下・VIO・バスト・<br>
+            お腹・おへそ周り・手の甲・足の甲・<br>
+            フルフェイス他
+          </p>
+          <div class="btn">
+            <p class="text_right"><a href="hair-removal.html" class="See__more">See more →</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <picture>
+      <!-- 幅が768px以下（スマホ）の場合に表示する画像 -->
+      <source srcset="images/index/banner-md.svg" media="(max-width: 768px)">
+      <!-- 幅が768pxを超える（PCなど）の場合に表示する画像 -->
+      <source srcset="images/index/banner-pc.svg" media="(min-width: 769px)">
+      <!-- 上記の条件が満たされない場合に表示される画像（フォールバック） -->
+      <img src="images/index/banner-md.svg" alt="Responsive Image">
+    </picture>
+    <section class="faq">
+      <h2 class="wrapper sec__title"><img src="images/index/FAQ.svg" alt="FAQ"></h2>
+      <details>
+        <summary>Q.返品、キャンセルはできますか</summary>
+        <div class="answer">
+          <p>A.ご契約当日から8日間はクーリングオフ制度がございます。クーリングオフ期間経過後も中途解約制度をご用意しています。（都度払い、キャンペーンコース等、一部中途解約をお受けできない場合があります）詳しくはお問い合わせください。</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Qまとめて契約しないといけないの？</summary>
+        <div class="answer">
+          <p>A.当サロンは1回1回の都度払いでもご利用いただけます。
+            コース契約でも、割引きありの都度払いが可能です。
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Q.エステの期限や費用は教えてもらえますか？</summary>
+        <div class="answer">
+          <p>A.お客様のお悩み、体質・目的・ご予算に合わせて、一緒にプランを組み立ててまいります。詳しくはカウンセリング時にご相談ください。
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Q病気や妊娠でエステに長い間行けなくなった場合どうなるの？</summary>
+        <div class="answer">
+          <p>A.コースのご変更や有効期限の延長については、サロンへお申し出ください。</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Q.持ち物について教えてください。</summary>
+        <div class="answer">
+          <p>A.フェイシャルコースを受ける場合、コンタクトレンズをご使用の際は外していただきますのでケース等をご持参ください。貴重品の管理はお客様ご自身にてお願いいたします。</p>
+        </div>
+      </details>
+      <details>
+        <summary>Qアレルギーや敏感肌を持っているのですが、施術を受けられますか？</summary>
+        <div class="answer">
+          <p>A.肌荒れが酷く炎症や傷がある場合は出来ませんが、アレルギーや敏感肌のお客様も施術を受けていただけます。ご予約時またはご来店時に、スタッフにその旨をお伝えください。お肌の状態に合わせて注意しつつ丁寧に施術致します。</p>
+        </div>
+      </details>
+    </section>
+
+    <section id="map">
+      <h2 class="wrapper sec__title"><img src="images/index/MAP.svg" alt="MAP"></h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3290.2615822130438!2d132.46449047573338!3d34.44550717301141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355a99450efe78b1%3A0x2dc3e8a1ba2f72e!2z44Og44O844Oz44Op44Kk44OI44OT44Ol44O844OG44Kj44O8!5e0!3m2!1sja!2sjp!4v1738137281607!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <ul>
+        <li>〒###-####</li>
+        <li>##### </li>
+        <li>#####</li>
+        <li>TEL : #########</li>
+        <li>営業時間 : 10 : 00 〜 23 : 00/不定休</li>
+        <li>メンズ脱毛 : 21 : 00 〜 23 : 00</li>
+      </ul>
+      <h3 class="openModal">駐車場はこちら</h3>
+      <div class="myModal modal">
+        <div class="modal-content">
+          <img src="#" alt="駐車場への行き方">
+        </div>
+      </div>
+
+    </section>
+    <section>
+
+      <h2 class="wrapper sec__title"><img src="images/index/contact.svg" alt="contact"></h2>
+
+      <p id="contact__text">お問い合わせについては、<br>下記の「お問い合わせフォーム」にてご連絡ください。</p>
+      <div class="form">
+        <h2 class="wrapper sec__title" id="contact__form">CONTACT FORM</h2>
+        <form action="./postmail.cgi" method="post">
+          <div class="form-group">
+            <label for="name" class="label">お名前</label>
+            <input type="text" id="name" name="name" size="35" required>
+          </div>
+
+          <div class="form-group">
+            <label for="furigana" class="label">フリガナ</label>
+            <input type="text" id="furigana" name="furigana" size="35" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="label">メールアドレス</label>
+            <input type="email" id="email" name="email" size="35" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone" class="label">電話番号</label>
+            <input type="tel" id="phone" name="phone" size="35" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="label">お問合せ内容</label>
+            <textarea id="message" name="message" rows="7" cols="55" required></textarea>
+          </div>
+
+          <div class="form-buttons label">
+            <input type="reset" class="input" value="リセット">
+            <input type="submit" class="input" value="送信する">
+          </div>
+        </form>
+      </div>
+      <div class="privacy">
+        <h4>個人情報の取扱いについて</h4>
+        <p>
+          ご記入いただいた個人情報は、お問い合わせへの対応および確認のためのみに利用します。<br>
+          また、この目的のためにお問い合わせの記録を残すことがあります。
+        </p>
+      </div>
+    </section>
+
+  </main>
+  <footer id="y">
+    <div class="footer__container">
+      <div class="footer__box">
+        <ul>
+          <li class="footer__box-title">予約</li>
+          <li>予約は下記の三通りから</li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="images/index/hpb.png" alt="ホットペッパーでご予約"></a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="images/index/line.png" alt="LINEでご予約"></a></li>
+          <li><a href="tel:#" class="larger__font"><img src="images/index/tell.png" alt="#">TEL###-###-####</a></li>
+        </ul>
+      </div>
+      <div class="footer__box">
+        <ul>
+          <li class="footer__box-title">SNS</li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="images/index/Instagram_Gradient.png" alt="インスタアイコン"></a></li>
+          <li> <span><a href="#" target="_blank" rel="noopener noreferrer" class="footer__button">口コミはこちら</a></span></li>
+        </ul>
+      </div>
+      <div class="footer__box">
+        <ul>
+          <li class="footer__box-title">住所＆営業時間</li>
+          <li class="footermap">〒###-####</li>
+          <li class="footermap">#########</li>
+          <li class="footermap">TEL###-###-####</li>
+          <li class="footermap">営業時間 : 10 : 00 〜 23 : 00/不定休</li>
+          <li class="footermap indent">女性は21 :00まで</li>
+          <li class="footermap indent">21 : 00 〜 23 : 00</li>
+          <li class="footermap indent">メンズ脱毛のみ（要相談）</li>
+          <li class="footermap footer_text_right"><a href="index.html#map">MAP</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="text_center"><small class="copy">&copy;2025 MOON LIGHT BEAUTY.</small></p>
+  </footer>
+  <a href="#top"><img id="backToTopBtn" src="images/index/page-top.svg" alt="ページトップに戻る"></a>
+</body>
+
+</html>

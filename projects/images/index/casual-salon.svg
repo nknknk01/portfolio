@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 449.93 185.05">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4c4c4c;
+        font-family: HGKyokashotai, HGKyokashotai;
+        font-size: 33.4px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        stroke: #c1c1c1;
+        stroke-miterlimit: 10;
+        stroke-width: 7.47px;
+      }
+    </style>
+  </defs>
+  <g id="_レイヤー_1" data-name="レイヤー_1">
+    <rect class="cls-2" x="3.74" y="3.74" width="442.46" height="177.58" rx="10" ry="10"/>
+  </g>
+  <g id="_レイヤー_2のコピー" data-name="レイヤー_2のコピー">
+    <text class="cls-1" transform="translate(46.88 65.63) scale(1.08 1)"><tspan x="0" y="0">幅広い年齢層で誰でも</tspan><tspan x="-16.7" y="41.75">通い易いアットホームな</tspan><tspan x="33.4" y="83.5">カジュアルサロン</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,854 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+
+/* ============================================================
+共通設定
+============================================================= */
+html {
+  font-size: 100%;
+}
+
+body {
+  background: url(../images/index/background-image.webp);
+  background-size: contain;
+  background-position: center;
+  font-family: "HGP教科書体", "HGS教科書体", "HG教科書体", serif;
+  font-size: calc(18/16*1rem);
+  line-height: 1.5;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  transition: opacity .3s;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+h2.wrapper {
+  margin: 30px 0;
+  padding: 0;
+  text-align: left;
+}
+
+#backToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  /* ページ下部から20px */
+  right: 5%;
+  padding: 10px;
+  background-color: transparent;
+  /* ボタンの背景を透明に */
+  border: none;
+  /* ボタンの枠をなくす */
+  cursor: pointer;
+  z-index: 9;
+  /* 他の要素の上に表示 */
+  width: 60px;
+  /* 矢印のサイズ */
+  height: auto;
+}
+
+#backToTopBtn:hover {
+  opacity: 0.8;
+  /* ホバー時に少し透明に */
+}
+
+/* ============================================================
+hero
+============================================================= */
+.hero {
+  padding: 10px;
+  text-align: center;
+}
+
+.hero__container.wrapper {
+  padding: 0;
+}
+
+
+/* ============================================================
+main
+============================================================= */
+/* about */
+.sec__title img {
+  width: 60%;
+}
+
+.about__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.about__inner p {
+  /* font-size: calc(14/16*1rem); */
+  width: 50%;
+}
+
+.about__inner img {
+  width: 50%;
+  height: auto;
+  /* アスペクト比を維持 */
+}
+
+.about__content {
+  text-align: center;
+  white-space: nowrap;
+
+}
+
+.about__content p {
+  width: 100%;
+  justify-content: center;
+  margin-top: 50px;
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", "SimSun", "Batang", serif;
+
+  font-size: clamp(calc(14/16*1rem), 3vw, 32px);
+}
+
+.about__content p:first-child {
+  margin-top: 0;
+}
+
+.about__content p:nth-child(2) {
+  text-align: center;
+}
+
+.about__text {
+  text-align: center;
+}
+
+.about__text p:nth-child(2) {
+  background-color: #fff;
+  margin: 50px 0;
+  width: 175px;
+  height: 90px;
+}
+
+
+.about__text h3 {
+  font-size: clamp(calc(21/16*1rem), 3vw, 32px);
+  font-weight: normal;
+}
+
+.about__text p:last-child {
+  font-size: clamp(calc(14/16*1rem), 3vw, 32px);
+}
+
+#font__change {
+  white-space: nowrap;
+  margin-bottom: 50px;
+}
+
+.card {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.card img:last-child {
+  margin-bottom: 20px;
+}
+
+#plus {
+  width: 8%;
+  margin: 0 auto;
+}
+
+/* ============================================================
+flow
+============================================================= */
+
+.arrow {
+  display: block;
+}
+
+.flow {
+  text-align: center;
+}
+
+.flow img {
+  width: 60%;
+}
+
+img.arrow {
+  margin: 10px auto;
+  width: 10%;
+}
+
+.flowcard__title {
+  font-size: calc(18/16*1rem);
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", "SimSun", "Batang", serif;
+}
+
+.pc-only-br {
+  display: none;
+  /* デフォルトでは非表示 */
+}
+
+.yoyaku {
+  background-color: #ffdaf3e4;
+  margin: 5% 20%;
+  padding: 5%;
+  padding-top: 3%;
+}
+
+ol li p {
+  text-align: left;
+  background-color: #fff;
+  margin-top: 5%;
+  font-size: clamp(calc(13/16*1rem), 3vw, 21px);
+  padding: 4%;
+}
+
+#yoyaku,
+#counseling,
+#treatment {
+  width: 100%;
+}
+
+
+@media (min-width: 769px) {
+  .pc-only-br {
+    display: block;
+    /* PC版では改行を表示 */
+    line-height: 0;
+  }
+
+  .about__inner img {
+    width: 40%;
+    height: auto;
+    /* アスペクト比を維持 */
+    margin-left: 3%;
+    /* margin-right: 3%; */
+    margin-top: 50px;
+  }
+
+  .about__content p {
+    font-size: calc(36/16*1rem);
+  }
+
+  #font__change {
+    font-size: calc(36/16*1rem);
+
+  }
+
+  .about__text h3 {
+    font-size: calc(48/16*1rem);
+    margin-bottom: 50px;
+  }
+
+  .card__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 2%;
+
+  }
+
+  .card__item {
+    display: flex;
+    align-items: center;
+  }
+
+  img.arrow {
+    transform: rotate(270deg);
+    width: 100%;
+    padding: 20%;
+    margin: 0;
+
+  }
+
+  h2.wrapper {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  .sec__title img {
+    width: 50%;
+  }
+
+  ol {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .yoyaku {
+    background-color: #ffdaf3e4;
+    margin: 0 1%;
+    padding: 0 2% 2%;
+    width: 28%;
+  }
+
+  .arrow {
+    /* margin: 1% auto; */
+    margin: 0;
+    width: 3%;
+    height: 100%;
+  }
+
+  .flowcard__title {
+    font-size: calc(24/16*1rem);
+    margin: 3%;
+  }
+
+}
+
+
+/* --------------------------------------------
+slide
+--------------------------------------------- */
+
+.slide {
+  display: flex;
+  overflow: hidden;
+  gap: 0;
+}
+
+.slide-inner {
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+  min-width: calc((100vw / 3 + 30px) * 5);
+  /* 5枚の画像とその間隔を考慮した幅 */
+}
+
+.slide img {
+  width: calc(100vw / 3);
+  /* 画像を3分割 */
+}
+
+@keyframes infinity-scroll-left {
+  from {
+    transform: translateX(0);
+    /* 初期位置 */
+  }
+
+  to {
+    transform: translateX(-100%);
+    /* 左に全体をスライドさせる */
+  }
+}
+
+.slide-anime {
+  animation: infinity-scroll-left 80s infinite linear;
+}
+
+@media (min-width: 769px) {
+  .slide img {
+    width: calc(100vw / 5);
+    /* 大画面では5分割 */
+  }
+
+  .slide-inner {
+    min-width: calc((100vw / 5 + 30px) * 5);
+    /* 大画面用の幅設定 */
+  }
+}
+
+/* =================================================================
+MENU
+===================================================================*/
+.menu {
+  text-align: center;
+}
+
+.menu__card {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+
+}
+
+.menu__card h3 {
+  font-size: calc(21/16*1rem);
+  margin-top: 1rem;
+}
+
+.menu__card small {
+  font-size: calc(8/16*1rem);
+  line-height: 0;
+}
+
+.menu__textbox p {
+  margin-top: 2rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+  font-size: calc(18/16*1rem);
+  white-space: nowrap;
+
+}
+
+p.text_right {
+  padding: 5px 8px;
+}
+
+.title__flex p {
+  margin-top: 0;
+  line-height: 1px;
+}
+
+#photofacial {
+  margin-top: 0;
+  line-height: 1px;
+}
+
+.h3__title {
+  font-family: "Elephant", serif;
+}
+
+
+.See__more {
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", "SimSun", "Batang", serif;
+
+}
+
+p.small__title {
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", "SimSun", "Batang", serif;
+
+  font-size: clamp(calc(10/16*1rem), 2vw, 32px);
+
+}
+
+.br-pc {
+  display: none;
+}
+
+.text_right {
+  background-color: #665f68;
+  /* ボタンの色 */
+  padding: 10px 20px;
+  /* 内側の余白 */
+  border: none;
+  /* 枠線なし */
+  cursor: pointer;
+  /* カーソルをポインターに */
+  font-size: 16px;
+  display: inline-block;
+  text-align: right;
+}
+
+.text_right a {
+  color: #fff;
+}
+
+.menu__card {
+  background-color: #fff;
+  padding: 20px 20px 0;
+}
+
+.btn {
+  text-align: right;
+}
+
+@media (min-width: 768px) {
+  .menu__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 100%;
+    padding: 0;
+  }
+
+  #menu__card {
+    margin-top: 0;
+  }
+
+  .img__change {
+    order: 2;
+  }
+
+  .menu__imgbox {
+    min-width: 0;
+    /* 必須 */
+    flex: 1;
+    padding: 0 6%;
+  }
+
+  .menu__textbox {
+    min-width: 0;
+    /* 必須 */
+    flex: 1;
+    text-align: left;
+    background-color: #e1d7e2;
+    padding: 1%;
+  }
+
+  .menu__textbox p {
+    font-size: calc(21/16*1rem);
+  }
+
+  h3.h3__title {
+    font-size: calc(36/16*1rem);
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  #beautiful__skin {
+    font-size: clamp(2px, 3vw, 36px);
+  }
+
+  #photofacial {
+    text-align: right;
+    margin: 0;
+  }
+
+  .title__flex {
+    display: flex;
+    align-items: baseline;
+    overflow: hidden;
+  }
+
+  .title__flex p {
+    margin: 0;
+  }
+
+  small.small__title {
+    margin-left: 10px;
+    font-size: calc(14/16*1rem);
+  }
+
+  p.small__title {
+    font-size: calc(14/16*1rem);
+    margin-left: 10px;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  p.text_right {
+    margin-bottom: 0;
+  }
+
+}
+
+/* =================================================================
+picture
+===================================================================*/
+picture img {
+  padding: 5%;
+}
+
+/* =================================================================
+FAQ
+===================================================================*/
+.faq details {
+  margin: 0 auto 10px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.faq summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq summary:hover,
+details[open]summary {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.faq summary::after {
+  content: '+';
+  margin-left: 30px;
+  color: #333;
+  transition: transform 0.5s;
+  font-size: clamp(1.5rem, 2vw, 32px);
+}
+
+.faq details[open] summary::after {
+  content: '-';
+  /* 開いた時に−に変更 */
+  font-size: clamp(1.5rem, 2vw, 32px);
+}
+
+.faq .answer {
+  padding: 20px;
+  line-height: 1.6;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+.faq details[open].answer {
+  animation: fad .5s ease;
+}
+
+.faq summary {
+  font-size: clamp(1.2rem, 2vw, 32px);
+}
+
+/* =================================================================
+MAP
+===================================================================*/
+/* MAPセクションのスタイル */
+#map {
+  text-align: center;
+}
+
+/* Googleマップのレスポンシブ対応 */
+#map iframe {
+  width: 100%;
+  /* モバイルでは画面幅に合わせて表示 */
+  height: auto;
+  aspect-ratio: 4 / 3;
+  /* アスペクト比を4:3に固定 */
+  border: 0;
+  padding: 20px;
+}
+
+/* 住所リストのスタイル */
+#map ul {
+  list-style-type: none;
+  padding: 20px;
+}
+
+#map ul li {
+  line-height: 2;
+}
+
+/* 画面が768px以上のスタイル */
+@media (min-width: 768px) {
+  #map iframe {
+    max-width: 600px;
+    /* 大きな画面では最大幅600pxに制限 */
+    height: 450px;
+    /* 高さを固定 */
+  }
+
+  #map ul li {
+    font-size: calc(28/16*1rem);
+    /* 大きな画面向けにフォントサイズを調整 */
+  }
+}
+
+.modal {
+  display: none;
+  /* 初めは非表示 */
+  position: fixed;
+  z-index: 1;
+  /* 最前面に表示 */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* 背景を少し暗く */
+  overflow: hidden;
+  color: #6d6d6d;
+}
+
+/* モーダルコンテンツ */
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  /* 上下左右の中央に配置 */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 15px;
+  /* 角丸を追加 */
+}
+
+.openModal {
+  color: #6d6d6d;
+  font-family: "HGP教科書体", "HGS教科書体", "HG教科書体", serif;
+}
+
+.openModal:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#map h3 {
+  font-size: calc(14/16*1rem);
+  padding: 1rem;
+  width: 50%;
+  max-width: 300px;
+  margin: 0 auto;
+  border: 2px solid #6d6d6d;
+}
+
+/* 画面が768px以上のスタイル */
+@media (min-width: 768px) {
+  #map h3 {
+    font-size: calc(36/16*1rem);
+  }
+}
+
+/* =================================================================
+form
+===================================================================*/
+/* 基本スタイル */
+.form {
+  padding: 1em;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #fff;
+  color: #9e8e77;
+  border-radius: 8px;
+}
+
+.form h3 {
+  text-align: center;
+  font-size: calc(21/16*1rem);
+  padding-left: 8px;
+  margin-bottom: 1rem;
+}
+
+.form p {
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #9e8e77;
+
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-buttons input {
+  width: 48%;
+  padding: 0.5rem;
+  border: 1px solid #9e8e77;
+
+  font-size: 1rem;
+  background-color: #fff;
+  color: #9e8e77;
+  cursor: pointer;
+}
+
+.form-buttons input[type="reset"] {
+  background-color: #9e8e77;
+  color: #ffffff;
+}
+
+.form-buttons input[type="submit"]:hover {
+  background-color: #e0e0e0;
+}
+
+.form-buttons input[type="reset"]:hover {
+  background-color: #5d4037;
+}
+
+#contact__text {
+  font-size: calc(12/16*1rem);
+  margin: 0 5%;
+}
+
+#contact__form {
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", "SimSun", "Batang", serif;
+
+}
+
+.form {
+  margin-top: 20px;
+}
+
+.form-buttons {
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.privacy {
+  margin: 5%;
+  font-size: 0.8rem;
+}
+
+/* 画面が768px以上のスタイル */
+@media (min-width: 768px) {
+  .form-group {
+    max-width: 1020px;
+    margin-bottom: 1rem;
+  }
+
+  .form-buttons input {
+    padding: 0.75rem;
+    font-size: 1.1rem;
+  }
+
+  .privacy {
+    margin-top: 1%;
+    font-size: 1rem;
+  }
+
+  #contact__text {
+    font-size: calc(16/16*1rem);
+    margin-left: 5%;
+  }
+
+  .answer p {
+    font-size: 1.5rem;
+  }
+
+  .faq details summary {
+    font-size: 1.5rem;
+  }
+
+
+}
