@@ -286,10 +286,10 @@ footer {
         background: linear-gradient(to right, #2b7a2b, #5aba5a); /* 緑 */
     }
     50% {
-        background: linear-gradient(to right, #ff8c00, #ffa500); /* オレンジ */
+        background: linear-gradient(to right, #945910, #7c5205); /* オレンジ */
     }
     75% {
-        background: linear-gradient(to right, #b22222, #ff4500); /* 赤 */
+        background: linear-gradient(to right, #951d1d, #8b2906); /* 赤 */
     }
     100% {
         background: linear-gradient(to right, #1e3c72, #2a5298); /* 青に戻る */
